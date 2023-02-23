@@ -3,3 +3,4 @@ af2_dataset_training_labeled.csv.gz
 X_train.csv.gz
 y_train.csv.gz
 kebing_model.sav
+submission.csv
