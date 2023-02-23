@@ -64,7 +64,7 @@ print(correlations['feat_DSSP_7']['feat_DSSP_11'])  0.554012707812967
 - don't use one hot encoding because the categories for the categorical varaible is too much => use ```LabelEncoder()```
 
 ### check outliers
-- bool covaraibles is too heavy on false values (no action performed)  
+- bool covaraibles is too heavy on false values (no action performed because features are also weighted)  
 ![image](https://user-images.githubusercontent.com/77596290/220824135-8f3f5d66-4cab-4716-a1a7-ea56642d134a.png)
 
 ### deal with imbalanced data
