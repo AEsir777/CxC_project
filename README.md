@@ -1,4 +1,15 @@
-# CxC_project
+# CxC_project - Cyclia
+
+## Demo usage - hosted using gradio space
+- using pickle to export and import data
+- host on gradio space
+![Screenshot_20230222_104822](https://user-images.githubusercontent.com/77596290/220822740-9b7bd91c-5fb6-4d84-bf3e-c17a48d988b6.png)
+<img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png>  
+
+[Try it out here](https://huggingface.co/spaces/AEsir777/CxC_project)
+
+
+
 ## Data Exploration
 - checking shape of the dataset (relatively large)
 ```{python}
@@ -81,18 +92,6 @@ imblanced = {false:1, true: 1.2}
 ## predictions
 ![image](https://user-images.githubusercontent.com/77596290/220822636-13904423-2136-40b3-a6d0-d5b6c1d0ddef.png)
 
-## host using gradio space
-- using pickle to export and import data
-- host on gradio space
-![Screenshot_20230222_104822](https://user-images.githubusercontent.com/77596290/220822740-9b7bd91c-5fb6-4d84-bf3e-c17a48d988b6.png)
 
-
-
-<iframe
-	src="https://aesir777-cxc-project.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
 
 
