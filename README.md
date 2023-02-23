@@ -3,13 +3,18 @@
 ## Demo usage - hosted using gradio space
 - using pickle to export and import data
 - host on gradio space
-![Screenshot_20230222_104822](https://user-images.githubusercontent.com/77596290/220822740-9b7bd91c-5fb6-4d84-bf3e-c17a48d988b6.png)
-<img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png>  
+ ![Screenshot_20230222_104822](https://user-images.githubusercontent.com/77596290/220822740-9b7bd91c-5fb6-4d84-bf3e-c17a48d988b6.png)
+- set input parameters
+![image](https://user-images.githubusercontent.com/77596290/220975522-64f58661-76cc-4b4d-ba65-05451d5bf339.png)
+
+<img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png> 
 
 [Try it out here](https://huggingface.co/spaces/AEsir777/CxC_project)
 
 ## Youtube Video
+
 [![Youtube Video](https://user-images.githubusercontent.com/77596290/220945884-7c8c8d89-e977-413c-a242-92b2d9adcaf1.png)](https://youtu.be/JKZnYqvM0kM)
+
 <img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png>  
 
 
