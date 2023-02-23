@@ -1,4 +1,15 @@
-# CxC_project
+# CxC_project - Cyclia
+
+## Demo usage - hosted using gradio space
+- using pickle to export and import data
+- host on gradio space
+![Screenshot_20230222_104822](https://user-images.githubusercontent.com/77596290/220822740-9b7bd91c-5fb6-4d84-bf3e-c17a48d988b6.png)
+<img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png>  
+
+[Try it out here](https://huggingface.co/spaces/AEsir777/CxC_project)
+
+
+
 ## Data Exploration
 - checking shape of the dataset (relatively large)
 ```{python}
@@ -34,14 +45,33 @@ print(correlations['feat_DSSP_7']['feat_DSSP_11'])  0.554012707812967
 
 ## preprocessing
 ### NA values
+- I find column
+```annotation_sequence``` and ```annotation_atomrec``` are exactly the same besides that ```annotation_atomrec``` has na values. => drop ```annotation_atomrec``` col
 
 ### scaling
+- check numerical data, most of them are not norm distributied => using ```minMaxScalar()```
 
 ### encoding categorical data
+- don't use one hot encoding because the categories for the categorical varaible is too much => use ```LabelEncoder()```
 
 ### check outliers
+- bool covaraibles is too heavy on false values (no action performed)  
+![image](https://user-images.githubusercontent.com/77596290/220824135-8f3f5d66-4cab-4716-a1a7-ea56642d134a.png)
 
 ### deal with imbalanced data
+- performed ```SMOTE``` and ```RandomUnderSample``` to
+
+- tunning considering run time efficiency, overfitting and roc_auc pr_auc
+[a, b] a is the sampling strategy for SMOTE and b is the sampling strategy for RandomUndersample  
+
+| sample_strategy | 0.1, 0.5 | 0.1, 0.3 | 0.2, 0.5 |  0.3, 0.6 | 0.5, 0.8 | 0.6, 0.9 | 0.8, 0.9 |
+| -------- | ------- | ------- | ------- | ------- |  ------- |  ------- |  ------- | 
+| roc_auc | 0.96861 | 0.972335 | 0.9895 | 0.99462 | 0.9975907|0.998134| 0.99893|
+| pr_auc | 0.90295| 0.87756 | 0.94928 | 0.968687 | 0.9830687 | 0.98615| 0.9900327|
+- To avoid too much samples and runtime too slow, choose ```[0.5, 0.8]```
+```
+Counter({False: 299945, True: 239956})
+```
 
 ## model tunning
 ```{python}
@@ -62,16 +92,6 @@ imblanced = {false:1, true: 1.2}
 ## predictions
 ![image](https://user-images.githubusercontent.com/77596290/220822636-13904423-2136-40b3-a6d0-d5b6c1d0ddef.png)
 
-## host using gradio space
-- using pickle to export and import data
-- host on gradio space
-![Screenshot_20230222_104822](https://user-images.githubusercontent.com/77596290/220822740-9b7bd91c-5fb6-4d84-bf3e-c17a48d988b6.png)
 
 
 
-<iframe
-	src="https://aesir777-cxc-project.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
