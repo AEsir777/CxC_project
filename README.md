@@ -8,6 +8,10 @@
 
 [Try it out here](https://huggingface.co/spaces/AEsir777/CxC_project)
 
+## Youtube Video
+[![Youtube Video](https://user-images.githubusercontent.com/77596290/220945884-7c8c8d89-e977-413c-a242-92b2d9adcaf1.png)](https://youtu.be/JKZnYqvM0kM)
+<img align="left" height="40px" src = https://www.iconpacks.net/icons/1/free-click-icon-1263-thumb.png>  
+
 
 
 ## Data Exploration
